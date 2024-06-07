@@ -1,0 +1,30 @@
+---LOGIN de funcionarios
+
+Email VARCHAR (100)
+usuario VARCHAR (20)
+Senha VARCHAR (50)
+Matricula INT NOT NULL
+
+---cadastro CLIENTES
+
+email VARCHAR (100)
+senha VARCHAR (50)
+dataDeNascimento DATE
+CPF CHAR (14)
+
+---Pagina de produtos 
+
+idProduto SERIAL PRIMARY KEY
+valorProduto DECIMAL (7,22)
+descricaoProduto VARCHAR (100)
+estoqueProduto INT
+
+---carrinho 
+
+idProduto FOREIGN KEY 
+valorProduto FOREIGIN KEY
+DescrcicaoProduto FOREIGN KEY
+valorTotal DECIMAL (7,22)
+
+
+

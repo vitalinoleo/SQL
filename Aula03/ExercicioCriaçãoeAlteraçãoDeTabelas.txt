@@ -1,0 +1,39 @@
+-----Fornecedor 
+fcodigo SERIAL PRIMARY KEY 
+fnome VARCHAR (100)
+status VARCHAR (30) DEFAULT 'ATIVO'
+cidade VARCHAR (100)
+
+-----peca
+pcodigo SERIAL PRIMARY KEY
+pnome VARCHAR(100)
+cor VARCHAR (50)
+peso INT
+cidade VARCHAR(100)
+
+-----intituicao
+icodigo SERIAL PRIMARY KEY
+nome VARCHAR (100)
+
+-----projeto
+prcodigo SERIAL PRIMARY KEY
+prnome VARCHAR (100)
+cidade VARCHAR (100)
+#icodigo FOREIGN KEY
+
+-----fornecimento
+#fcodigo FOREIGN KEY
+#pcodigo FOREIGN KEY
+#prcodigo FOREIGN KEY
+quantidade FOREIGN KEY
+   
+
+
+EXERCICIO 2 
+
+- DAR DROP NO INTITUIÇÃO
+- ACRESCENTAR UM CREATE 
+	-----CIDADE
+	CCODIGO SERIAL PRIMARY KEY
+	CNOME VARCHAR (100)
+	UF VARCHAR (2)

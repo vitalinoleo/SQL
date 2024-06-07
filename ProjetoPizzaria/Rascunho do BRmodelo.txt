@@ -1,0 +1,41 @@
+---Cadastro Funcionario
+
+emailF VARCHAR(100)     
+SenhaF VARCHAR (100)
+Matricula INT NOT NULLL
+
+---Cadastro cliente 
+
+emailC VARCHAR (100)
+senhaC VARCHAR (100)
+dataDeNascimento DATE
+CPF CHAR (14)
+numeroDeCelular INT CHAR (11)
+Endereco VARCHAR (100)
+
+
+---Cardapio
+
+idProduto SERIAL PRIMARY KEY 
+ingredientesProduto VARCHAR
+valorProduto DECIMAL (7,22)
+observacaoProduto VARCHAR (100)
+
+---Carrinho
+
+idProduto FOREIGN KEY 
+valorProduto FOREIGN KEY
+precoTotal DECIMAL (7,22)
+
+---Delivery 
+
+idProduto FOREIGN KEY
+IngredientesProduto FOEREIGN KEY
+valorProduto FOREIGN KEY
+valorEntrega DECIMAL (7,22)
+precoTotal DECIMAL (7,22)
+EnderecoEntrega VARCHAR (100)
+
+
+
+

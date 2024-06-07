@@ -1,0 +1,28 @@
+-----Fornecedor 
+fcodigo SERIAL PRIMARY KEY 
+fnome VARCHAR (100)
+status 
+cidade VARCHAR (100)
+
+-----peca
+pcodigo SERIAL PRIMARY KEY
+pnome VARCHAR(100)
+cor VARCHAR (50)
+peso INT
+cidade VARCHAR(100)
+
+-----intituicao
+icodigo SERIAL PRIMARY KEY
+nome VARCHAR (100),
+
+-----projeto
+prcodigo SERIAL PRIMARY KEY
+prnome VARCHAR (100)
+cidade VARCHAR (100)
+#icodigo FOREIGN KEY
+
+-----fornecimento
+#fcodigo FOREIGN KEY
+#pcodigo FOREIGN KEY
+#prcodigo FOREIGN KEY
+quantidade FOREIGN KEY
